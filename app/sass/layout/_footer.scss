@@ -1,0 +1,38 @@
+@import "../base/settings";
+
+footer {
+	width: $max-width;
+	background: #666;
+	padding: 20px;
+}
+
+.footer_inner {
+	@extend %base_width;
+	@extend %clearfix
+}
+
+.footer_content01 {
+	width: 50%;
+	float: left;
+}
+
+.footer_content02 {
+	width: 50%;
+	float: right;
+}
+
+.footer_menu {
+	@extend clearfix;
+}
+
+.footer_menu_item {
+	float: left;
+	width: $menu-width;
+	//padding: 0 20px 0 0;
+	a {
+		color: #FFF;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

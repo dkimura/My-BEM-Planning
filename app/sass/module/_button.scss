@@ -1,0 +1,47 @@
+/*
+#overview
+ボタン（4種類）
+
+*/
+
+/*
+#styleguide
+
+ボタン（4種類）
+```
+<p class="posr cat01"><a class="btn">ボタン</a></p>
+<p class="posr cat02"><a class="btn">ボタン</a></p>
+<p class="posr cat03"><a class="btn">ボタン</a></p>
+<p class="posr cat04"><a class="btn">ボタン</a></p>
+```
+*/
+
+@import "../base/settings";
+
+.btn {
+	display: block;
+	float: right;
+	text-align: center;
+	color: #FFF;
+	border-radius: 5px;
+	padding: 5px 10px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	.cat01 & {
+		background: $cat-color01;
+		border-bottom: solid 1px $cat-sub-color01;
+	}
+	.cat02 & {
+		background: $cat-color02;
+		border-bottom: solid 1px $cat-sub-color02;
+	}
+	.cat03 & {
+		background: $cat-color03;
+		border-bottom: solid 1px $cat-sub-color03;
+	}
+	.cat04 & {
+		background: $cat-color04;
+		border-bottom: solid 1px $cat-sub-color04;
+	}
+}

@@ -1,0 +1,44 @@
+@import "../base/settings";
+
+* {
+	padding: 0;
+	margin: 0;
+	//@include fz(14);
+	box-sizing: border-box;
+}
+
+html {
+	//font-size: 62.5%;
+	min-height: 100%;
+}
+
+body {
+	font-size: (14);
+}
+
+//エレメント
+ul,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+.container {
+	width: $max-width;
+}
+.wrapper {
+	@extend %base_width;
+	@extend %clearfix;
+	padding: 50px 0;
+}
+
+.posr {
+	position: relative;
+}
+

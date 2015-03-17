@@ -1,0 +1,78 @@
+@import "../base/settings";
+.main {
+	width: $main-width;
+	margin-right: $main-mr;
+	float: left;
+}
+
+.post {
+	position: relative;
+	border: solid 1px $sub-color;
+	padding: 10px 20px 20px 20px;
+	margin-bottom: 30px;
+	@extend %clearfix;
+}
+
+.post_heading {
+	border-bottom: solid 1px $sub-color;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	@include fz(16);
+	.cat01 & {
+		a {
+			color: $cat-color01;
+		}
+	}
+	.cat02 & {
+		a {
+			color: $cat-color02;
+		}
+	}
+	.cat03 & {
+		a {
+			color: $cat-color03;
+		}
+	}
+	.cat04 & {
+		a {
+			color: $cat-color04;
+		}
+	}
+}
+
+.post_text {
+}
+
+.post_img {
+	float: left;
+	padding-right: 15px;
+}
+
+.post_detail {
+	position: absolute;
+	left: 180px;
+	bottom: 20px;
+}
+
+.post_time {
+	color: $sub-color;
+}
+
+.cat_link {
+	&:hover {
+		text-decoration: underline;
+	}
+	.cat01 & {
+		color: $cat-color01;
+	}
+	.cat02 & {
+		color: $cat-color02;
+	}
+	.cat03 & {
+		color: $cat-color03;
+	}
+	.cat04 & {
+		color: $cat-color04;
+	}
+}
+

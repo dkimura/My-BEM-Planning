@@ -1,0 +1,39 @@
+$width:980px;
+$max-width:100%;
+$main-width:65%;
+$main-mr:10%;
+$side-width:$max-width - $main-width - $main-mr;
+$menu-width:$max-width / 4;
+$sub-color: #CCC;
+$cat-color01:#EDDF89;//#f2a428
+$cat-color02:#C0DCF4;//#f88686
+$cat-color03:#C9E47D;//#7ed663
+$cat-color04:#F0BED5;//#21c0c1
+$cat-sub-color01:#8f7f1b;
+$cat-sub-color02:#527ca0;
+$cat-sub-color03:#758549;
+$cat-sub-color04:#947583;
+
+//extend
+%clearfix {
+	*zoom: 1;
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+%base_width {
+	width: $width;
+	margin: 0 auto;
+}
+
+//mixin
+@mixin fz($size: 14) {
+	font-size: $size + px;
+	font-size: ($size / 10) * 1rem;
+}
+
+
+

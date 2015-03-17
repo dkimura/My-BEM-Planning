@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/*
+* base
+*/
+.wrapper, .header_menu, .footer_inner, .post, .side .archive {
+  *zoom: 1; }
+  .wrapper:after, .header_menu:after, .footer_inner:after, .post:after, .side .archive:after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.wrapper, .header_inner, .footer_inner {
+  width: 980px;
+  margin: 0 auto; }
+
+/*
+* layout
+*/
+.wrapper, .header_menu, .footer_inner, .post, .side .archive {
+  *zoom: 1; }
+  .wrapper:after, .header_menu:after, .footer_inner:after, .post:after, .side .archive:after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.wrapper, .header_inner, .footer_inner {
+  width: 980px;
+  margin: 0 auto; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  min-height: 100%; }
+
+body {
+  font-size: 14; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: bottom; }
+
+.container {
+  width: 100%; }
+
+.wrapper {
+  padding: 50px 0; }
+
+.posr {
+  position: relative; }
+
+/*
+#overview
+ヘッダー
+
+*/
+/*
+#styleguide
+
+メニュー（4種類）
+```
+<ul class="header_menu">
+	<li class="header_menu_item cat01"><a href=""><span>text</span>テキスト</a></li>
+	<li class="header_menu_item cat02"><a href=""><span>text</span>テキスト</a></li>
+	<li class="header_menu_item cat03"><a href=""><span>text</span>テキスト</a></li>
+	<li class="header_menu_item cat04"><a href=""><span>text</span>テキスト</a></li>
+</ul>
+```
+*/
+.wrapper, .header_menu, .footer_inner, .post, .side .archive {
+  *zoom: 1; }
+  .wrapper:after, .header_menu:after, .footer_inner:after, .post:after, .side .archive:after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.wrapper, .header_inner, .footer_inner {
+  width: 980px;
+  margin: 0 auto; }
+
+header {
+  width: 100%;
+  border-top: solid 10px #666; }
+
+.header_content01 {
+  padding: 10px 0; }
+
+.header_h1 {
+  font-family: 'Quicksand',sans-serif; }
+
+.header_menu_item {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  border-left: solid 1px #CCC; }
+  .header_menu_item a {
+    display: block;
+    color: #777;
+    font-family: 'Quicksand',sans-serif;
+    width: 100%;
+    height: 50px;
+    line-height: 1.4;
+    text-align: center; }
+    .header_menu_item a span {
+      display: block; }
+  .header_menu_item.cat01 a:hover {
+    border-bottom: solid 3px #EDDF89; }
+  .header_menu_item.cat01 a span {
+    color: #EDDF89; }
+  .header_menu_item.cat02 a:hover {
+    border-bottom: solid 3px #C0DCF4; }
+  .header_menu_item.cat02 a span {
+    color: #C0DCF4; }
+  .header_menu_item.cat03 a:hover {
+    border-bottom: solid 3px #C9E47D; }
+  .header_menu_item.cat03 a span {
+    color: #C9E47D; }
+  .header_menu_item.cat04 {
+    border-right: solid 1px #CCC; }
+    .header_menu_item.cat04 a:hover {
+      border-bottom: solid 3px #F0BED5; }
+    .header_menu_item.cat04 a span {
+      color: #F0BED5; }
+
+.wrapper, .header_menu, .footer_inner, .post, .side .archive {
+  *zoom: 1; }
+  .wrapper:after, .header_menu:after, .footer_inner:after, .post:after, .side .archive:after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.wrapper, .header_inner, .footer_inner {
+  width: 980px;
+  margin: 0 auto; }
+
+footer {
+  width: 100%;
+  background: #666;
+  padding: 20px; }
+
+.footer_content01 {
+  width: 50%;
+  float: left; }
+
+.footer_content02 {
+  width: 50%;
+  float: right; }
+
+.footer_menu_item {
+  float: left;
+  width: 25%; }
+  .footer_menu_item a {
+    color: #FFF; }
+    .footer_menu_item a:hover {
+      text-decoration: underline; }
+
+.wrapper, .header_menu, .footer_inner, .post, .side .archive {
+  *zoom: 1; }
+  .wrapper:after, .header_menu:after, .footer_inner:after, .post:after, .side .archive:after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.wrapper, .header_inner, .footer_inner {
+  width: 980px;
+  margin: 0 auto; }
+
+.main {
+  width: 65%;
+  margin-right: 10%;
+  float: left; }
+
+.post {
+  position: relative;
+  border: solid 1px #CCC;
+  padding: 10px 20px 20px 20px;
+  margin-bottom: 30px; }
+
+.post_heading {
+  border-bottom: solid 1px #CCC;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  .cat01 .post_heading a {
+    color: #EDDF89; }
+  .cat02 .post_heading a {
+    color: #C0DCF4; }
+  .cat03 .post_heading a {
+    color: #C9E47D; }
+  .cat04 .post_heading a {
+    color: #F0BED5; }
+
+.post_img {
+  float: left;
+  padding-right: 15px; }
+
+.post_detail {
+  position: absolute;
+  left: 180px;
+  bottom: 20px; }
+
+.post_time {
+  color: #CCC; }
+
+.cat_link:hover {
+  text-decoration: underline; }
+.cat01 .cat_link {
+  color: #EDDF89; }
+.cat02 .cat_link {
+  color: #C0DCF4; }
+.cat03 .cat_link {
+  color: #C9E47D; }
+.cat04 .cat_link {
+  color: #F0BED5; }
+
+.wrapper, .header_menu, .footer_inner, .post, .side .archive {
+  *zoom: 1; }
+  .wrapper:after, .header_menu:after, .footer_inner:after, .post:after, .side .archive:after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.wrapper, .header_inner, .footer_inner {
+  width: 980px;
+  margin: 0 auto; }
+
+.side {
+  width: 25%;
+  float: right;
+  padding: 0px 10px 10px; }
+  .side .archive {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: dotted 1px #CCC; }
+
+.archive_heading {
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-size: 1.1rem; }
+  .archive_heading a {
+    font-size: 11px;
+    font-size: 1.1rem; }
+  .cat01 .archive_heading a {
+    color: #EDDF89; }
+  .cat02 .archive_heading a {
+    color: #C0DCF4; }
+  .cat03 .archive_heading a {
+    color: #C9E47D; }
+  .cat04 .archive_heading a {
+    color: #F0BED5; }
+
+.archive_text {
+  font-size: 9px;
+  font-size: 0.9rem; }
+
+.archive_img {
+  float: left;
+  padding-right: 15px;
+  width: 30%;
+  height: auto; }
+
+.archive_detail {
+  display: block;
+  font-size: 8px;
+  font-size: 0.8rem; }
+
+.archive_time {
+  color: #CCC; }
+
+.cat01 .cat_link {
+  color: #EDDF89; }
+.cat02 .cat_link {
+  color: #C0DCF4; }
+.cat03 .cat_link {
+  color: #C9E47D; }
+.cat04 .cat_link {
+  color: #F0BED5; }
+
+/*
+* module
+*/
+/*
+#overview
+ボタン（4種類）
+
+*/
+/*
+#styleguide
+
+ボタン（4種類）
+```
+<p class="posr cat01"><a class="btn">ボタン</a></p>
+<p class="posr cat02"><a class="btn">ボタン</a></p>
+<p class="posr cat03"><a class="btn">ボタン</a></p>
+<p class="posr cat04"><a class="btn">ボタン</a></p>
+```
+*/
+.wrapper, .header_menu, .footer_inner, .post, .side .archive {
+  *zoom: 1; }
+  .wrapper:after, .header_menu:after, .footer_inner:after, .post:after, .side .archive:after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.wrapper, .header_inner, .footer_inner {
+  width: 980px;
+  margin: 0 auto; }
+
+.btn {
+  display: block;
+  float: right;
+  text-align: center;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+  .cat01 .btn {
+    background: #EDDF89;
+    border-bottom: solid 1px #8f7f1b; }
+  .cat02 .btn {
+    background: #C0DCF4;
+    border-bottom: solid 1px #527ca0; }
+  .cat03 .btn {
+    background: #C9E47D;
+    border-bottom: solid 1px #758549; }
+  .cat04 .btn {
+    background: #F0BED5;
+    border-bottom: solid 1px #947583; }
+
+/*
+* pages
+*/

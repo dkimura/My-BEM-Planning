@@ -1,0 +1,78 @@
+@import "../base/settings";
+.side {
+	width: $side-width;
+	float: right;
+	padding: 0px 10px 10px;
+	.archive {
+		position: relative;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		@extend %clearfix;
+		border-bottom: dotted 1px $sub-color;
+	}
+}
+
+.archive_heading {
+	//border-bottom: solid 1px $sub-color;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	@include fz(11);
+	a {
+		@include fz(11);
+	}
+	.cat01 & {
+		a {
+			color: $cat-color01;
+		}
+	}
+	.cat02 & {
+		a {
+			color: $cat-color02;
+		}
+	}
+	.cat03 & {
+		a {
+			color: $cat-color03;
+		}
+	}
+	.cat04 & {
+		a {
+			color: $cat-color04;
+		}
+	}
+}
+
+.archive_text {
+	@include fz(9);
+}
+
+.archive_img {
+	float: left;
+	padding-right: 15px;
+	width: 30%;
+	height: auto;
+}
+
+.archive_detail {
+	display: block;
+	@include fz(8);
+}
+
+.archive_time {
+	color: $sub-color;
+}
+
+.cat_link {
+	.cat01 & {
+		color: $cat-color01;
+	}
+	.cat02 & {
+		color: $cat-color02;
+	}
+	.cat03 & {
+		color: $cat-color03;
+	}
+	.cat04 & {
+		color: $cat-color04;
+	}
+}

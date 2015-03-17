@@ -1,0 +1,102 @@
+/*
+#overview
+ヘッダー
+
+*/
+
+/*
+#styleguide
+
+メニュー（4種類）
+```
+<ul class="header_menu">
+	<li class="header_menu_item cat01"><a href=""><span>text</span>テキスト</a></li>
+	<li class="header_menu_item cat02"><a href=""><span>text</span>テキスト</a></li>
+	<li class="header_menu_item cat03"><a href=""><span>text</span>テキスト</a></li>
+	<li class="header_menu_item cat04"><a href=""><span>text</span>テキスト</a></li>
+</ul>
+```
+*/
+
+@import "../base/settings";
+
+header {
+	width: $max-width;
+	border-top: solid 10px #666;
+}
+
+.header_inner {
+	@extend %base_width;
+}
+
+.header_content01 {
+	padding: 10px 0;
+}
+
+.header_h1 {
+	font-family: 'Quicksand',sans-serif;
+}
+
+.header_menu {
+	@extend %clearfix;
+}
+
+.header_menu_item {
+	float: left;
+	width: $menu-width;
+	box-sizing: border-box;
+	border-left: solid 1px $sub-color;
+	a {
+		display: block;
+		color: #777;
+		font-family: 'Quicksand',sans-serif;
+		width: $max-width;
+		height: 50px;
+		line-height: 1.4;
+		text-align: center;
+		span {
+			display: block;
+		}
+	}
+	&.cat01 {
+		a {
+			&:hover {
+				border-bottom: solid 3px $cat-color01;
+			}
+			span {
+				color: $cat-color01;
+			}
+		}
+	}
+	&.cat02 {
+		a {
+			&:hover {
+				border-bottom: solid 3px $cat-color02;
+			}
+			span {
+				color: $cat-color02;
+			}
+		}
+	}
+	&.cat03 {
+		a {
+			&:hover {
+				border-bottom: solid 3px $cat-color03;
+			}
+			span {
+				color: $cat-color03;
+			}
+		}
+	}
+	&.cat04 {
+		border-right: solid 1px $sub-color;
+		a {
+			&:hover {
+				border-bottom: solid 3px $cat-color04;
+			}
+			span {
+				color: $cat-color04;
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*
+* base
+*/
+@import "base/settings"; //リセットファイル名
+
+/*
+* layout
+*/
+@import "layout/common";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main";
+@import "layout/side";
+
+/*
+* module
+*/
+@import "module/button";
+//@import "module/heading";
+//@import "module/list";
+//@import "module/media";
+
+/*
+* pages
+*/
+//@import "index";
+//@import "archive";
