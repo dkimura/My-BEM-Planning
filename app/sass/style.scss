@@ -2,12 +2,13 @@
 /*
 * base
 */
-@import "base/settings"; //リセットファイル名
+//@import "base/default/reset"; //リセット
+@import "base/settings"; //変数・extend・mixin
+@import "base/common"; //共通項
 
 /*
 * layout
 */
-@import "layout/common";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/main";

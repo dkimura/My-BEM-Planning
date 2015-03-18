@@ -15,8 +15,10 @@
 .archive_heading {
 	//border-bottom: solid 1px $sub-color;
 	padding-bottom: 0px;
-	margin-bottom: 5px;
 	@include fz(11);
+	& + .archive_text {
+		padding-top: 5px;
+	}
 	a {
 		@include fz(11);
 	}

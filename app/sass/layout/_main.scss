@@ -16,8 +16,10 @@
 .post_heading {
 	border-bottom: solid 1px $sub-color;
 	padding-bottom: 5px;
-	margin-bottom: 15px;
 	@include fz(16);
+	& + .post_text {
+		padding-top: 15px;
+	}
 	.cat01 & {
 		a {
 			color: $cat-color01;

@@ -3,13 +3,16 @@ var gulp = require('gulp'); //gulp本体
 var concat = require('gulp-concat'); //複数ファイルを結合
 var frontnote = require('gulp-frontnote'); //ドキュメン化
 var imagemin = require('gulp-imagemin'); //画像の軽量化
-var pleeease = require('gulp-pleeease'); //ベンダープレフィックスを自動で付与と、圧縮
+//var pleeease = require('gulp-pleeease'); //ベンダープレフィックスを自動で付与と、圧縮
 var plumber = require('gulp-plumber'); //gulpでwatch中にエラーが出た時にエラーメッセージを通知
 var runSequence = require('gulp-run-sequence'); //依存関係を設定せずに順序を指定
 var sass = require('gulp-sass'); //sassを使用
 var uglify = require('gulp-uglify'); //JSの軽量化
 var rimraf = require('rimraf'); //余分なファイル・ディレクトリを削除
 //var jshint = require('gulp-jshint'); //JSの構文チェック
+var autoprefixer = require("gulp-autoprefixer");
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
 
 /*gulp.task('clean', function(cb){
 	rimraf('./app/', cb);
@@ -24,9 +27,17 @@ gulp.task('sass', function() {
 			css:'../css/style.css'
 		}))
 		.pipe(sass())
-		.pipe(gulp.dest('./app/css/'))
-		.pipe(pleeease({fallbacks: {autoprefixer: ['last 2 versions', 'ie 8', 'ie 9']}}))
-		.pipe(plumber({errorHandler: notify.onError('Error: ')}));
+		.pipe(cssmin())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('./app/css/'))/*
+		.pipe(pleeease({
+			autoprefixer: {
+				browsers: ['last 2 versions', 'ie 8', 'ie 9']
+			},
+			minifier: true
+		}));
+		.pipe(plumber({errorHandler: notify.onError('Error: ')}));*/
+		.pipe(autoprefixer());
 });
 
 gulp.task('imagemin', function(){
