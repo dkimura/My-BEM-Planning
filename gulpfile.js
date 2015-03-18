@@ -24,7 +24,7 @@ gulp.task('sass', function() {
 			title:'Style Guide',
 			//overview: './app/README.md',
 			out:'./app/style_guide',
-			css:'../css/style.css'
+			css:'../css/style.min.css'
 		}))
 		.pipe(sass())
 		.pipe(cssmin())
@@ -83,6 +83,6 @@ gulp.task('dist', function(){
 		.pipe(gulp.dest('./dist/img/'));
 	gulp.src('./app/js/**/*.js')
 		.pipe(gulp.dest('./dist/js/'));
-	gulp.src('./app/**/*.html','!sass/style_guide/*.html')
+	gulp.src('./app/**/*.html')
 		.pipe(gulp.dest('./dist/'));
 });
