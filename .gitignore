@@ -38,3 +38,7 @@ node_modules
 ### Sass ###
 .sass-cache
 *.css.map
+
+
+### dist ###
+dist/
